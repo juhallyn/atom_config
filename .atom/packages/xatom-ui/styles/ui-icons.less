@@ -1,0 +1,98 @@
+.fileIconImage(@fileType: '', @extension: 'svg') {
+  background-image: url('atom://xatom-ui/icons/@{fileType}.@{extension}'),
+                    url("atom://xatom-ui/icons/file.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0!important;
+}
+
+.fileIconContainer(@width, @height) {
+  font-family: initial;
+  content: ' '!important;
+  vertical-align: baseline;
+  width: @width;
+  height: @height!important;
+  top: (100%-@height)/2;
+  bottom: (100%-@height)/2;
+  margin-left: -(@width + 4px);
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.fileIconFromExtension(@extension: '', @fileType: 'type/@{extension}') {
+  &[data-name$='.@{extension}']::before {
+    .fileIconImage(@fileType);
+  }
+}
+
+.fileIcon (@width: 20px, @height: 84%) {
+  position: relative;
+  padding-left: (@width + 4px)!important;
+  &::before {
+    .fileIconContainer(@width, @height);
+    // -webkit-filter: grayscale(80%);
+  }
+  &.icon-file-directory::before {
+    background-image: url("atom://xatom-ui/icons/folder.svg");
+  }
+  &.icon-repo::before {
+    background-image: url("atom://xatom-ui/icons/project.svg");
+  }
+  &.icon-tools::before {
+    background-image: url("atom://xatom-ui/icons/settings.svg");
+  }
+  &.icon-file-text::before {
+    .fileIconImage('type/text');
+  }
+  &.icon-file-media::before {
+    .fileIconImage('type/media');
+  }
+  // Media Files
+  .fileIconFromExtension('png', 'type/media');
+  .fileIconFromExtension('jpg', 'type/media');
+  .fileIconFromExtension('jpeg', 'type/media');
+  .fileIconFromExtension('svg', 'type/media');
+  // Archive Files
+  .fileIconFromExtension('zip', 'archive');
+  .fileIconFromExtension('rar', 'archive');
+  .fileIconFromExtension('tar', 'archive');
+  .fileIconFromExtension('bz2', 'archive');
+  .fileIconFromExtension('tb2', 'archive');
+  .fileIconFromExtension('tbz', 'archive');
+  .fileIconFromExtension('tbz2', 'archive');
+  .fileIconFromExtension('gz', 'archive');
+  .fileIconFromExtension('tgz', 'archive');
+  .fileIconFromExtension('lz', 'archive');
+  .fileIconFromExtension('lzma', 'archive');
+  .fileIconFromExtension('tlz', 'archive');
+  .fileIconFromExtension('xz', 'archive');
+  .fileIconFromExtension('txz', 'archive');
+  .fileIconFromExtension('z', 'archive');
+  .fileIconFromExtension('tz', 'archive');
+  // Script Files
+  .fileIconFromExtension('md', 'type/markdown');
+  .fileIconFromExtension('swift');
+  .fileIconFromExtension('rb', 'type/ruby');
+  .fileIconFromExtension('py', 'type/python');
+  .fileIconFromExtension('go', 'type/gopher');
+  .fileIconFromExtension('java');
+  .fileIconFromExtension('pdf');
+  .fileIconFromExtension('html');
+  .fileIconFromExtension('jade');
+  .fileIconFromExtension('pug', 'type/jade');
+  .fileIconFromExtension('css');
+  .fileIconFromExtension('less');
+  .fileIconFromExtension('sass');
+  .fileIconFromExtension('scss', 'type/sass');
+  .fileIconFromExtension('styl', 'type/stylus');
+  .fileIconFromExtension('php');
+  .fileIconFromExtension('json');
+  .fileIconFromExtension('sketch');
+  .fileIconFromExtension('coffee', 'type/coffeescript');
+  .fileIconFromExtension('cson', 'type/coffeescript');
+  .fileIconFromExtension('js', 'type/javascript');
+  .fileIconFromExtension('ts', 'type/typescript');
+}

@@ -1,0 +1,66 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/zz/zyxvpxvq6csfxvn_n0002jkr000mcp/T/d-117715-35581-30dt7j.14qt5oecdi/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/zz/zyxvpxvq6csfxvn_n0002jkr000mcp/T/d-117715-35581-30dt7j.14qt5oecdi/package.tgz",
+        "spec": "/private/var/folders/zz/zyxvpxvq6csfxvn_n0002jkr000mcp/T/d-117715-35581-30dt7j.14qt5oecdi/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/zz/zyxvpxvq6csfxvn_n0002jkr000mcp/T/apm-install-dir-117715-35581-svzeth.67vxnu3di"
+    ]
+  ],
+  "_from": "../d-117715-35581-30dt7j.14qt5oecdi/package.tgz",
+  "_id": "atom-monokai-soda@3.0.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/atom-monokai-soda",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/zz/zyxvpxvq6csfxvn_n0002jkr000mcp/T/d-117715-35581-30dt7j.14qt5oecdi/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/zz/zyxvpxvq6csfxvn_n0002jkr000mcp/T/d-117715-35581-30dt7j.14qt5oecdi/package.tgz",
+    "spec": "/private/var/folders/zz/zyxvpxvq6csfxvn_n0002jkr000mcp/T/d-117715-35581-30dt7j.14qt5oecdi/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117715-35581-30dt7j.14qt5oecdi/package.tgz",
+  "_shasum": "8cdcfe56629b297a24bfe7228b66f0bf6e1a8be9",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/zz/zyxvpxvq6csfxvn_n0002jkr000mcp/T/d-117715-35581-30dt7j.14qt5oecdi/package.tgz",
+  "_where": "/private/var/folders/zz/zyxvpxvq6csfxvn_n0002jkr000mcp/T/apm-install-dir-117715-35581-svzeth.67vxnu3di",
+  "bugs": {
+    "url": "https://github.com/SH128/atom-monokai-soda/issues"
+  },
+  "dependencies": {},
+  "description": "Converted from the original buymesoda theme using the TextMate Bundle Converter.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/SH128/atom-monokai-soda#readme",
+  "keywords": [
+    "syntax",
+    "theme",
+    "monokai soda",
+    "atom soda"
+  ],
+  "license": "MIT",
+  "name": "atom-monokai-soda",
+  "optionalDependencies": {},
+  "readme": "# atom-monokai-soda theme\n\nThe original Soda dark theme from Ian Hill (http://buymeasoda.github.io/soda-theme/) converted for Atom using the TextMate bundle converter.\n\nI don't own it. I just converted it, because I wanted to use it in atom too. :)\n\n![A screenshot of your theme](https://raw.githubusercontent.com/0xSteph/atom-monokai-soda/master/screenshot.png)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SH128/atom-monokai-soda.git"
+  },
+  "theme": "syntax",
+  "version": "3.0.1"
+}

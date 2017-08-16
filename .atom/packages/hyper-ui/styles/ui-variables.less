@@ -1,0 +1,96 @@
+
+// UI Variables
+// -------------------
+
+// These are the official UI variables that every UI theme should define.
+// It allows other packages to match your theme.
+
+// Overrides: atom/static/variables/ui-variables.less
+
+// Try to edit some of the values below to see your theme change.
+// A good start is to change the color of the `@base-background-color` variable.
+
+@primary-color: #50E3C2;
+
+// Text Colors
+@text-color:           hsl(0,0%,66%);
+@text-color-subtle:    hsl(0,0%,50%);
+@text-color-highlight: hsl(0,0%,94%);
+@text-color-selected:  hsl(0,0%,100%);
+
+@text-color-info:    #5D96E4;
+@text-color-success: @primary-color;
+@text-color-warning: #FFD082;
+@text-color-error:   #F83453;
+
+// Background colors
+@background-color-info:    #5070E3;
+@background-color-success: @primary-color;
+@background-color-warning: #FFA40D;
+@background-color-error:   #F60C31;
+
+@background-color-highlight: lighten(@base-background-color, 3%);
+@background-color-selected:  lighten(@base-background-color, 5%);
+@app-background-color:       @base-background-color;
+
+// Base colors
+@base-background-color: #181818;
+@base-border-color:     #333333;
+@base-action-color:     @primary-color;
+
+// Component colors
+@pane-item-background-color: @base-background-color;
+@pane-item-border-color:     @base-border-color;
+
+@input-background-color: @app-background-color;
+@input-border-color:     @base-border-color;
+
+@tool-panel-background-color: @base-background-color;
+@tool-panel-border-color:     @base-border-color;
+
+@inset-panel-background-color: @base-background-color;
+@inset-panel-border-color:     @base-border-color;
+
+@panel-heading-background-color: @base-background-color;
+@panel-heading-border-color:     @base-border-color;
+
+@overlay-background-color: @base-background-color;
+@overlay-border-color:     @base-border-color;
+
+@button-background-color:          lighten(@base-background-color, 10%);
+@button-background-color-hover:    lighten(@button-background-color, 12%);
+@button-background-color-selected: @button-background-color-hover;
+@button-border-color:              @base-border-color;
+
+@tab-bar-background-color:    @base-background-color;
+@tab-bar-border-color:        @base-border-color;
+@tab-background-color:        @tab-bar-background-color;
+@tab-background-color-active: lighten(@tab-bar-background-color, 10%);
+@tab-border-color:            @base-border-color;
+
+@tree-view-background-color: @base-background-color;
+@tree-view-border-color:     @base-border-color;
+
+// Site colors
+@ui-site-color-1: hsl(208, 100%, 50%); // blue
+@ui-site-color-2: hsl(160,  70%, 42%); // green
+@ui-site-color-3: hsl(32,   60%, 50%); // orange
+@ui-site-color-4: #D831B0;             // pink
+@ui-site-color-5: #EBDD5B;             // yellow
+
+// Sizes
+@font-size: 12px;
+@input-font-size: 14px;
+
+@disclosure-arrow-size: 12px;
+
+@component-padding: 10px;
+@component-icon-padding: 5px;
+@component-icon-size: 16px;
+@component-line-height: 25px;
+
+@tab-height: 34px;
+
+// Misc
+@component-border-radius: 2px;
+@font-family: 'Inconsolata', '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;

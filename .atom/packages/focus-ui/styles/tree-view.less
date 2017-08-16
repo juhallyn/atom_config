@@ -1,0 +1,37 @@
+
+// Tree View
+// -------------------
+
+// Used to explore and open files in the current project.
+// Overrides: atom/tree-view
+
+
+.tree-view-resizer {
+  border-right: 1px solid @base-border-color;
+}
+
+.tree-view {
+  color: fade(@text-color, 40%);
+  background-color: @tree-view-background-color;
+  opacity: 0.6;
+  padding: 20px;
+  transition: opacity 90ms linear;
+
+  &:hover {
+      opacity: 1;
+  }
+
+
+    .list-item:hover {
+        color: fade(@text-color, 90%);
+    }
+
+    .list-item.selected {
+        color: fade(@text-color, 90%);
+    }
+
+    .list-item.header {
+        color: fade(@text-color, 70%);
+        font-weight: 700;
+    }
+}
