@@ -1,0 +1,64 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/zz/zyxvpxvq6csfxvn_n0002jkr000mcp/T/d-117715-35830-1fnlimx.sqnse5ewmi/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/zz/zyxvpxvq6csfxvn_n0002jkr000mcp/T/d-117715-35830-1fnlimx.sqnse5ewmi/package.tgz",
+        "spec": "/private/var/folders/zz/zyxvpxvq6csfxvn_n0002jkr000mcp/T/d-117715-35830-1fnlimx.sqnse5ewmi/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/zz/zyxvpxvq6csfxvn_n0002jkr000mcp/T/apm-install-dir-117715-35830-6bt6ga.1pt359udi"
+    ]
+  ],
+  "_from": "../d-117715-35830-1fnlimx.sqnse5ewmi/package.tgz",
+  "_id": "arc-ui@0.1.7",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/arc-ui",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/zz/zyxvpxvq6csfxvn_n0002jkr000mcp/T/d-117715-35830-1fnlimx.sqnse5ewmi/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/zz/zyxvpxvq6csfxvn_n0002jkr000mcp/T/d-117715-35830-1fnlimx.sqnse5ewmi/package.tgz",
+    "spec": "/private/var/folders/zz/zyxvpxvq6csfxvn_n0002jkr000mcp/T/d-117715-35830-1fnlimx.sqnse5ewmi/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117715-35830-1fnlimx.sqnse5ewmi/package.tgz",
+  "_shasum": "6077758e38e38092531a0cd5ce35e25dab97c1ec",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/zz/zyxvpxvq6csfxvn_n0002jkr000mcp/T/d-117715-35830-1fnlimx.sqnse5ewmi/package.tgz",
+  "_where": "/private/var/folders/zz/zyxvpxvq6csfxvn_n0002jkr000mcp/T/apm-install-dir-117715-35830-6bt6ga.1pt359udi",
+  "bugs": {
+    "url": "https://github.com/ruhatch/arc-ui/issues"
+  },
+  "dependencies": {},
+  "description": "An adaptable, minimalist UI theme for Atom, based on Arc GTK theme",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/ruhatch/arc-ui#readme",
+  "keywords": [
+    "ui",
+    "theme"
+  ],
+  "license": "MIT",
+  "name": "arc-ui",
+  "optionalDependencies": {},
+  "readme": "# Arc UI Theme\n\nA adaptable, minimalist UI theme based on the popular Arc GTK theme. This is a WIP so please open an issue if you see anything wrong/ugly.\n\n![A screenshot of your theme](https://raw.githubusercontent.com/ruhatch/arc-ui/master/arc-ui.png)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruhatch/arc-ui.git"
+  },
+  "theme": "ui",
+  "version": "0.1.7"
+}

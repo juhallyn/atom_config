@@ -1,0 +1,50 @@
+.syntax--css, .syntax--scss, .syntax--less {
+  &.syntax--meta {
+    &.syntax--selector {
+      color: @white;
+    }
+
+    &.syntax--property-name, &.syntax--support.syntax--type.syntax--property-name {
+      color: @cyan;
+    }
+
+    &.syntax--at-rule.syntax--import {
+      color: @yellow;
+    }
+  }
+
+  &.syntax--invalid.syntax--illegal {
+    color: inherit;
+    background: none;
+  }
+
+  &.syntax--support {
+    &.syntax--property-name {
+      color: @cyan;
+    }
+
+    &.syntax--type.syntax--property-name.syntax--unknown {
+      -webkit-filter: none !important;
+    }
+
+    &.syntax--function {
+      color: @green;
+    }
+  }
+
+  &.syntax--keyword.syntax--operator {
+    color: @white;
+  }
+
+  &.syntax--function {
+    color: @green;
+  }
+
+  &.syntax--punctuation {
+    color: @white;
+  }
+
+  &.syntax--constant {
+    color: @purple;
+  }
+}

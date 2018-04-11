@@ -1,0 +1,5 @@
+
+(electron:23505): Gtk-WARNING **: Theme parsing error: gtk.css:3601:22: 'none' is not a valid color name
+Attempting to call a function in a renderer window that has been closed or released.
+Function provided here: worker.js:71:22
+Remote event names: destroyed, crashed

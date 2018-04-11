@@ -1,0 +1,159 @@
+// Tabs
+// -------------------
+
+// Displays selectable tabs above the editor.
+// Overrides: atom/tabs
+
+.tab-bar {
+  background-color: @tab-bar-background-color;
+  border-bottom: 1px solid @base-border-color;
+
+  &::-webkit-scrollbar {
+      display: none;
+  }
+
+  .tab {
+    color: @text-color;
+    height: @tab-height;
+    line-height: @tab-height;
+    font-size: @font-size - 1;
+    font-weight: 700;
+    background-color: @tab-background-color;
+    text-transform: uppercase;
+
+    .title::before{
+        font-size: 12px
+    }
+
+    &.active {
+      color: @text-color-selected;
+      background-color: @tab-background-color-active;
+    }
+
+
+    // Modified Icon (the blue circle) -------------------
+    &.modified:not(:hover) .close-icon {
+      top: 50%;
+      right: @component-padding + 4px; // 4px -> half of icon size
+      margin-top: -3px;
+      border-color: @text-color-info;
+    }
+    &.modified:hover .close-icon {
+      color: currentColor;
+    }
+
+    .close-icon {
+        opacity: 0;
+        transform: translateY(-1px);
+        transition: opacity 90ms linear;
+    }
+    &:hover .close-icon {
+        opacity: 0.3;
+    }
+    &:hover .close-icon:hover {
+        opacity: 1;
+    }
+
+    // Close Icon (the X) -------------------
+    .close-icon:hover {
+      color: @text-color-selected;
+    }
+    &.active .close-icon:hover {
+      color: @text-color;
+    }
+
+
+    // Dragging -------------------
+    // Styles get applied while dragging a tab
+    &.is-dragging {
+      background: darken(@tab-background-color, 10%);
+      border-color: transparent;
+      opacity: 0.3;
+
+      & .close-icon {
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+
+.pane .tab-bar .tab {
+    background-color: @base-background-color;
+    border-top: 1px solid @base-background-color;
+    color: @text-color-subtle;
+    transition: color 90ms linear;
+
+    &:hover {
+        color: @text-color;
+
+        &.modified::after {
+            display: none;
+        }
+    }
+
+    &.modified::after {
+        content: '';
+        width: 5px;
+        height: 5px;
+        position:absolute;
+        right: 16px;
+        top: calc(50%);
+        margin-top: -2px;
+        border-radius: 50%;
+        background-color: @text-color;
+    }
+}
+.pane.active {
+    .tab-bar {
+        .tab {
+            &.active {
+                border-top-color: @text-color;
+                color: @text-color;
+
+                &:hover {
+                    border-top-color: @text-color;
+                }
+            }
+        }
+    }
+}
+
+// Hide title bar
+
+#atom-no-title-bar() {
+    @title-bar-buttons-width: 80px; // seems to work well for many themes
+
+    .title-bar .title {
+        display: none;
+    }
+
+    .title-bar,
+    .tool-bar,
+    .tool-bar button.tool-bar-btn {
+        border-width: 0;
+    }
+
+    atom-workspace atom-workspace-axis.horizontal {
+        margin-top: -23px;
+        background-color: @tab-bar-background-color;
+    }
+
+    atom-panel-container {
+        &.left {
+            margin-top: @tab-height;
+        }
+
+        &.right {
+            margin-top: @tab-height;
+        }
+    }
+
+    atom-workspace atom-panel-container.left:empty + atom-workspace-axis.vertical atom-pane:first-child .tab-bar {
+        padding-left: @title-bar-buttons-width;
+    }
+}
+
+.platform-darwin {
+    #atom-no-title-bar;
+}

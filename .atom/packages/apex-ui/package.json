@@ -1,0 +1,58 @@
+{
+  "_from": "file:/tmp/d-118311-23722-12h8gax.62ny/package.tgz",
+  "_id": "apex-ui@1.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-aVg8fyAuhc+xFc4NEWEtXH5jm63mFyxpEu8KE37TJEW/tdd6hMbI1nH6Uwdheb8LmXotw2UEjGTbthrR5cpNxQ==",
+  "_location": "/apex-ui",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "file",
+    "where": "/tmp/apm-install-dir-118311-23722-1geeky4.9vix",
+    "raw": "/tmp/d-118311-23722-12h8gax.62ny/package.tgz",
+    "rawSpec": "/tmp/d-118311-23722-12h8gax.62ny/package.tgz",
+    "saveSpec": "file:/tmp/d-118311-23722-12h8gax.62ny/package.tgz",
+    "fetchSpec": "/tmp/d-118311-23722-12h8gax.62ny/package.tgz"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "/tmp/d-118311-23722-12h8gax.62ny/package.tgz",
+  "_spec": "/tmp/d-118311-23722-12h8gax.62ny/package.tgz",
+  "_where": "/tmp/apm-install-dir-118311-23722-1geeky4.9vix",
+  "bugs": {
+    "url": "https://github.com/apex/apex-ui/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Apex monochrome theme UI inspired by iA Writer",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/apex/apex-ui#readme",
+  "keywords": [
+    "apex",
+    "monochrome",
+    "ui",
+    "ia",
+    "theme",
+    "writer"
+  ],
+  "license": "MIT",
+  "name": "apex-ui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apex/apex-ui.git"
+  },
+  "theme": "ui",
+  "version": "1.2.0",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

@@ -1,0 +1,63 @@
+// Checkbox
+.input-checkbox {
+  border: 1px solid @button-border-color;
+  box-shadow: 0 .05rem 0 0 rgba(255, 255, 255, .08) inset;
+  width: 18px;
+  height: 18px;
+  &:active {
+    background-color: @accent-color;
+  }
+  &:before,
+  &:after {
+    background-color: @accent-text-color;
+  }
+  &:checked {
+    background-color: @accent-color;
+  }
+
+  &:indeterminate {
+    background-color: @accent-color;
+  }
+}
+
+// Radio
+.input-radio {
+  &:before {
+    background-color: @accent-text-color;
+  }
+  &:active {
+    background-color: @accent-color;
+  }
+  &:checked {
+    background-color: @accent-color;
+  }
+}
+
+// Range (Slider)
+.input-range {
+  &::-webkit-slider-thumb {
+    background-color: @accent-color;
+  }
+}
+
+// Toggle
+.input-toggle {
+  &:checked {
+    background-color: @accent-color;
+  }
+  &:before {
+    background-color: @accent-text-color;
+  }
+}
+
+// States
+.input-text,
+.input-search,
+.input-number,
+.input-textarea,
+.input-select,
+.input-color {
+  &:focus {
+    .focus();
+  }
+}

@@ -1,0 +1,25 @@
+.syntax--source.syntax--css {
+
+  // highlight properties/values if they are supported
+  .syntax--property-name{
+    color: @hue-5;
+    &.syntax--support {
+      font-style: italic;
+    }
+  }
+
+  .syntax--property-value {
+    color: @mono-1;
+    &.syntax--support {
+      font-style: italic;
+    }
+    &.syntax--constant{
+      color: @mono-2;
+    }
+  }
+
+  .syntax--parent-selector.syntax--css{
+    color: @hue-3;
+  }
+
+}
